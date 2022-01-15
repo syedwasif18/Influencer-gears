@@ -187,6 +187,36 @@ button a{
 
 }
 /* popular collection section ends */
+/* my own section css start*/
+.most-searched-gears{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.most-searched-gears .collection-1{
+    display: inline-flex;
+}
+.most-searched-gears .collection-1 .collection-image img{
+    width: 250px;
+}
+.most-searched-gears .collection-1 .collection-content{
+    margin-left: 5px;
+}
+#Buy-now{
+    margin-top: 20px;
+    background-color: gray;
+    border-color: gray;
+    margin-left: 5px;
+}
+#Buy-now:hover{
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+#next-page{
+    margin-top: 20px;
+}
+/* my own section css ends */
 /* footer section css starts */
 .footer-info{
     background-color: black;
@@ -243,6 +273,11 @@ button a{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
+    .most-searched-gears{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .footer-info{
         background-color: black;
         color: white;
@@ -272,6 +307,10 @@ button a{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+    .most-searched-gears{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
     .footer-info{
         background-color: black;
