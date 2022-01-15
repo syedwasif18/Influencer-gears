@@ -14,7 +14,6 @@ main{
 }
 .container{
     width: 1050px;
-    background-color: hotpink;
     
 }
 /* Header section css */
@@ -68,10 +67,7 @@ header{
     font-weight: 600;
     margin-top: 0;
 }
-.prebook{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+button{
     justify-content: center;
     width: 196px;
     background-color: #E02C6D;
@@ -80,14 +76,15 @@ header{
     font-size: 16px;
     font-weight: 700;
     overflow: hidden;
+    border-color: #E02C6D;
 }
-.prebook:hover{
+button:hover{
     transform: scale(1.1);
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-in;
 }
-.prebook-text a{
+button a{
     text-decoration: none;
     color: white;
 }
@@ -100,6 +97,7 @@ header{
 .influencer-photo img {
     width: 449px;
     border-radius: 50%;
+    background-color: rgba(211, 211, 211, 0.212);
 }
 .influencer-photo img:hover{
     transform: rotate(360deg);
@@ -109,6 +107,10 @@ header{
 }
 /* influencer journey section css ends*/
 /* popular collection section css starts */
+.collections{
+    display: flex;
+    flex-direction: column;
+}
 .collections h2{
     font-size: 28px;
     font-weight: 600;
@@ -147,6 +149,21 @@ header{
     margin-top: 6px;
     margin-bottom: 0;
 
+}
+#stars{
+    margin-right: 3px;
+}
+#stars .fas{
+    color: #FB8200;
+    width: 11px;
+    margin-left: 0px;
+    margin-right: 3px;
+}
+#numeric-rating{
+    font-size: 14px;
+    font-weight: 700;
+    color: #5E6366;
+    margin-left: 5px;
 }
 .collection-content p{
     font-size: 14px;
@@ -200,3 +217,65 @@ header{
     color: white;
 }
 /* footer section css ends */
+/* rsponsive for mobile  */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .journey{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .collections{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .popular-collections{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .footer-info{
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+}
+/* rsponsive for tablet  */
+@media only screen and (min-width:688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .journey{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .collections{
+        display: flex;
+
+    }
+    .popular-collections{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .footer-info{
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+}
