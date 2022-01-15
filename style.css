@@ -247,7 +247,8 @@ button a{
     color: white;
 }
 /* footer section css ends */
-/* rsponsive for mobile  */
+/* -----------------------------rsponsive for mobile  
+-----------------------------------------------------*/
 @media only screen and (max-width:688px){
     .container{
         width: 100%;
@@ -261,6 +262,9 @@ button a{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .influencer-photo img {
+        width: 200px;
     }
 
     .collections{
@@ -284,7 +288,8 @@ button a{
         text-align: center;
     }
 }
-/* rsponsive for tablet  */
+/* --------------------rsponsive for tablet  
+--------------------------------------------*/
 @media only screen and (min-width:688px) and (max-width: 992px){
     .container{
         width: 100%;
@@ -318,3 +323,4 @@ button a{
         text-align: center;
     }
 }
+/* All codes done */
