@@ -13,8 +13,8 @@ main{
     align-items: center;
 }
 .container{
-    background-color: antiquewhite;
     width: 1050px;
+    background-color: hotpink;
     
 }
 /* Header section css */
@@ -41,6 +41,11 @@ header{
 }
 .menu ul li a{
     text-decoration: none;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+.menu ul li a .fas{
     color: #3A3A3A;
     font-size: 16px;
     font-weight: 600;
@@ -74,6 +79,13 @@ header{
     border-radius: 41px;
     font-size: 16px;
     font-weight: 700;
+    overflow: hidden;
+}
+.prebook:hover{
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
 }
 .prebook-text a{
     text-decoration: none;
@@ -89,6 +101,12 @@ header{
     width: 449px;
     border-radius: 50%;
 }
+.influencer-photo img:hover{
+    transform: rotate(360deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
 /* influencer journey section css ends*/
 /* popular collection section css starts */
 .collections h2{
@@ -100,10 +118,14 @@ header{
 .popular-collections{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 50px;
 }
 .collection-1{
     background-color: white;
     padding: 17px 26px 17px 10px;
+    box-shadow: 5px 10px 8px 8px #8888882c;
 }
 .collection-image img{
     width: 293px;
@@ -132,10 +154,11 @@ header{
     margin-bottom: 0;
     margin-top: 0;
 }
-.bottom{
+.bottom a{
     display: flex;
     color: #E02C6D;
     float: right;
+    text-decoration: none;
 }
 .bottom-text h4{
     font-size: 16px;
@@ -146,3 +169,34 @@ header{
     color: #E02C6D;
 
 }
+/* popular collection section ends */
+/* footer section css starts */
+.footer-info{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer-info h2{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+.footer-info p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #D9DBE1;
+}
+.footer-info ul{
+    display: flex;
+    justify-content: center;
+}
+.footer-info ul li{
+    list-style: none;
+    margin-right: 20px;
+    padding-bottom: 50px;
+}
+.footer-info ul li a {
+    text-decoration: none;
+    color: white;
+}
+/* footer section css ends */
